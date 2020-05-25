@@ -1,0 +1,42 @@
+{
+  "name": "musix",
+  "version": "1.0.0",
+  "description": "'An easy to integrate music player'",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist/ && webpack --mode production --config ./config/webpack.prod.config.js",
+    "dev": "webpack-dev-server --mode development --config ./config/webpack.dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Showrin/musix.git"
+  },
+  "author": "Showrin Barua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Showrin/musix/issues"
+  },
+  "homepage": "https://github.com/Showrin/musix#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
