@@ -27,6 +27,27 @@
       justify-content: center;
       margin-bottom: 30px;
 
+      &-equalizer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        &-bar {
+          background-color: $primary-color;
+          background-image: linear-gradient($secondary-color, $primary-color);
+          border-radius: 5px;
+          height: 70px;
+          margin: 0 1.5px;
+          opacity: 0.7;
+          transform: scaleY(1);
+          width: 6px;
+
+          &--inverse {
+            background-image: linear-gradient($primary-color, $secondary-color);
+          }
+        }
+      }
+
       &-thumbnail {
         border-radius: 50%;
         box-shadow: 0px -10px 50px #cc30cc67, 0px 10px 50px #f4631d;
