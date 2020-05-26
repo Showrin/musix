@@ -29,20 +29,39 @@
           </div>
         </div>
         <div class="player__info-description">
-          <div class="player__info-description-song"></div>
-          <div class="player__info-description-singer"></div>
+          <div class="player__info-description-song">Whenever, Wherever</div>
+          <div class="player__info-description-singer">Shakira</div>
         </div>
       </div>
       <div class="player__controller">
         <div class="player__controller-time">
-          <div class="player__controller-time-played"></div>
-          <div class="player__controller-time-end"></div>
-          <div class="player__controller-time-range"></div>
+          <div class="player__controller-time-played">01:30</div>
+          <div class="player__controller-time-end">04:30</div>
+          <input
+            type="range"
+            class="player__controller-time-range"
+            value="33"
+            max="100"
+            min="0"
+          />
+          <div class="player__controller-time-progress"></div>
         </div>
         <div class="player__controller-buttons">
-          <div class="player__controller-buttons-btn--small"></div>
-          <div class="player__controller-buttons-btn--large"></div>
-          <div class="player__controller-buttons-btn--small"></div>
+          <div
+            class="player__controller-buttons-btn player__controller-buttons-btn--small"
+          >
+            <img src="./src/images/backward-solid.svg" alt="backward-button" />
+          </div>
+          <div
+            class="player__controller-buttons-btn player__controller-buttons-btn--large"
+          >
+            <img src="./src/images/play-solid.svg" alt="play-button" />
+          </div>
+          <div
+            class="player__controller-buttons-btn player__controller-buttons-btn--small"
+          >
+            <img src="./src/images/forward-solid.svg" alt="forward-button" />
+          </div>
         </div>
       </div>
     </div>
