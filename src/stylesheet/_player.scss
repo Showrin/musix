@@ -157,9 +157,12 @@
 
       &-btn {
         align-items: center;
+        background: transparent;
+        border: none;
         cursor: pointer;
         display: flex;
         justify-content: center;
+        outline: none;
         transition: all 0.2s ease;
 
         &--large {
