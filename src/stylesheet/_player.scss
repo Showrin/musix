@@ -3,10 +3,12 @@
   background-color: #ececec;
   border-radius: 20px;
   box-shadow: 0 6px 10px $shadow;
-  height: 76%;
+  height: 735px;
+  max-height: 735px;
+  max-width: 530px;
   overflow: hidden;
   position: absolute;
-  width: 28%;
+  width: 530px;
 
   &__nav {
     padding: 30px;
