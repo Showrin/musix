@@ -119,6 +119,7 @@
           -webkit-appearance: none;
           background: $primary-color;
           border-radius: 50%;
+          cursor: pointer;
           height: 15px;
           margin-top: -6px;
           transition: all 0.2s ease;
@@ -134,9 +135,15 @@
           background: $primary-color;
           border-radius: 50%;
           border: none;
+          cursor: pointer;
           height: 15px;
           margin-top: -6px;
+          transition: all 0.1s ease;
           width: 15px;
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
 
