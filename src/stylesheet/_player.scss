@@ -7,4 +7,12 @@
   overflow: hidden;
   position: absolute;
   width: 31%;
+
+  &__nav {
+    padding: 30px;
+
+    &-logo {
+      width: 20%;
+    }
+  }
 }
