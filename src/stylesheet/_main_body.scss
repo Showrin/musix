@@ -1,0 +1,28 @@
+body {
+  background-color: $main-body;
+}
+
+.brandIcon,
+.brandName,
+.copywrite {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+.brandIcon {
+  left: 70px;
+  top: 70px;
+  width: 15%;
+}
+
+.brandName {
+  @include centerPositioning();
+  width: 95%;
+}
+
+.copywrite {
+  bottom: 30px;
+  right: 30px;
+  width: 15%;
+}
