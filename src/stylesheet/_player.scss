@@ -1,18 +1,38 @@
 .player {
   @include centerPositioning();
-  background-color: #fff;
+  background-color: #ececec;
   border-radius: 20px;
   box-shadow: 0 6px 10px $shadow;
   height: 76%;
   overflow: hidden;
   position: absolute;
-  width: 31%;
+  width: 30%;
 
   &__nav {
     padding: 30px;
 
     &-logo {
       width: 20%;
+    }
+  }
+
+  &__info {
+    padding: 30px;
+
+    &-display {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-thumbnail {
+        border-radius: 50%;
+        box-shadow: 0px -10px 50px #cc30cc67, 0px 10px 50px #f4631d;
+        display: block;
+        height: 200px;
+        margin: 0 8%;
+        object-fit: cover;
+        width: 200px;
+      }
     }
   }
 }
