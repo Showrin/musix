@@ -1,0 +1,10 @@
+.player {
+  @include centerPositioning();
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px $shadow;
+  height: 76%;
+  overflow: hidden;
+  position: absolute;
+  width: 31%;
+}
