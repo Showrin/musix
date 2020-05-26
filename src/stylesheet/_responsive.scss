@@ -1,0 +1,77 @@
+@media screen and (max-width: 590px) {
+  .player {
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+
+    &__nav {
+      padding: 20px;
+
+      &-logo {
+        width: 100px;
+      }
+    }
+
+    &__info {
+      padding: 4vh 10px;
+
+      &-display {
+        flex-wrap: wrap;
+
+        &-thumbnail {
+          height: 150px;
+          width: 150px;
+        }
+
+        &-equalizer {
+          img {
+            width: 40px;
+          }
+        }
+      }
+
+      &-description {
+        &-song {
+          font-size: 22px;
+        }
+
+        &-singer {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__controller {
+      height: 215px;
+
+      &-time {
+        padding: 30px 20px;
+      }
+
+      &-buttons {
+        &-btn {
+          &--large {
+            height: 70px;
+            width: 70px;
+
+            img {
+              width: 20px;
+            }
+          }
+
+          &--small {
+            height: 40px;
+            width: 40px;
+
+            img {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
