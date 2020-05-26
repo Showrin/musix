@@ -16,7 +16,7 @@
     }
 
     &__info {
-      padding: 4vh 10px;
+      padding: 5vh 10px;
 
       &-display {
         flex-wrap: wrap;
@@ -45,13 +45,15 @@
     }
 
     &__controller {
-      height: 215px;
+      height: 195px;
 
       &-time {
         padding: 30px 20px;
       }
 
       &-buttons {
+        margin-top: 0;
+
         &-btn {
           &--large {
             height: 70px;
