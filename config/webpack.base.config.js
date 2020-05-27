@@ -41,6 +41,18 @@ module.exports = {
         ],
       },
       {
+        test: /\.(eot|ttf|woff)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[hash:8].[ext]",
+              outputPath: "fonts",
+            },
+          },
+        ],
+      },
+      {
         test: [/.css$|.scss$/],
         use: [
           MiniCssExtractPlugin.loader,
