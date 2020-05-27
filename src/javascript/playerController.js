@@ -10,6 +10,7 @@ const smallButtons = document.querySelectorAll(
   ".player__controller-buttons-btn--small"
 );
 const primaryColor = "#f4631d";
+const player = document.querySelectorAll("#js-musix-player")[0];
 
 smallButtons.forEach((button) => {
   addRippleEffect(button, primaryColor);
@@ -22,8 +23,9 @@ playPauseButton.addEventListener("click", function () {
   changePlayPauseIcon(element, playerState);
   if (playerState === "play") {
     playEqualizerAnimation();
+    player.play();
   } else {
     stopEqualizerAnimation();
-    return 0;
+    player.pause();
   }
 });
