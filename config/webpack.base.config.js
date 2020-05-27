@@ -41,6 +41,18 @@ module.exports = {
         ],
       },
       {
+        test: /\.(mp3|m4a)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[hash:8].[ext]",
+              outputPath: "songs",
+            },
+          },
+        ],
+      },
+      {
         test: /\.(eot|ttf|woff)$/,
         use: [
           {
