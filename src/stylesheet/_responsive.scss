@@ -28,6 +28,7 @@
 
         &-equalizer {
           &-bar {
+            height: 50px;
             width: 3px;
           }
         }
@@ -59,8 +60,8 @@
             height: 70px;
             width: 70px;
 
-            img {
-              width: 20px;
+            i {
+              font-size: 24px;
             }
           }
 
@@ -68,8 +69,8 @@
             height: 40px;
             width: 40px;
 
-            img {
-              width: 25px;
+            i {
+              font-size: 18px;
             }
           }
         }
