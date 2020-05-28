@@ -69,19 +69,29 @@
       </div>
       <div class="player__controller">
         <div class="player__controller-time">
-          <div class="player__controller-time-played">01:30</div>
-          <div class="player__controller-time-end">04:30</div>
+          <div id="js-song-current-time" class="player__controller-time-played">
+            00:00
+          </div>
+          <div id="js-song-duration" class="player__controller-time-end">
+            00:00
+          </div>
           <input
+            id="js-playing-time-controller"
             type="range"
             class="player__controller-time-range"
-            value="33"
+            value="0"
             max="100"
             min="0"
+            step="0.1"
           />
-          <div class="player__controller-time-progress"></div>
+          <div
+            id="js-playing-progress-bar"
+            class="player__controller-time-progress"
+          ></div>
         </div>
         <div class="player__controller-buttons">
           <button
+            id="js-backward-btn"
             class="player__controller-buttons-btn player__controller-buttons-btn--small"
           >
             <i class="icon-backward"></i>
@@ -93,6 +103,7 @@
             <i class="icon-play"></i>
           </button>
           <button
+            id="js-forward-btn"
             class="player__controller-buttons-btn player__controller-buttons-btn--small"
           >
             <i class="icon-forward"></i>
